@@ -23,10 +23,12 @@
 		</header>
 		<main>
 			<section class="search">
-				<h1>Trouver votre hébergement pour  des vacances de rêve</h1>
-				<p>En plein centre ville ou en pleine nature</p>
+				<div class="search-intro">
+					<h1>Trouver votre hébergement pour  des vacances de rêve</h1>
+					<p>En plein centre ville ou en pleine nature</p>
+				</div>
 								<!-- SEARCH-START-->
-				<form class="search-container">
+				<form class="search-form">
 					<label class="search-label-icon" for="search-input"><i class="fas fa-map-marker-alt" id="search-icon"></i>
 					</label>
 					<input type="search" value="Marseille, France" id="search-input">
@@ -38,7 +40,7 @@
 								<!--SEARCH-END-->
 								<!--FILTERS-START-->
 				<div class="filters-container">
-					<p id="filtres">Filtres</p>
+					<p>Filtres</p>
 					<div class="filter">
 						<i class="fas fa-money-bill-wave circle-icon"></i><span class="filter-name">Économique</span>
 					</div>
@@ -60,7 +62,7 @@
 			</section>
 								<!--HEBERGEMENT-CARDS-START-->
 			<div class="middle-container">
-				<section class="hebergements">
+				<section class="hebergements" id="hebergements">
 						<h2>Hébergements à Marseille</h2>
 						<div class="cards-container">
 							<article class="card">
@@ -172,7 +174,7 @@
 								</a>
 							</article>
 						</div>
-						<p id="card-p">Afficher plus</p>
+						<a href="#" class="hebergements-link">Afficher plus</a>
 				</section>
 									<!--HEBERGEMENTS-CARDS-END-->
 									<!--LES PLUS POPULAIRES-CARDS-START-->
@@ -247,7 +249,7 @@
 									<!--LES PLUS POPULAIRES-CARDS-END -->
 			</div>
 									<!--ACTIVITÉS A MARSEILLE-CARDS-START-->
-			<section class="activites">
+			<section class="activites" id="activites">
 				<h2>Activités à Marseille</h2>
 				<div class="card-activites-container">
 					<a href="#" class="card-activites card-activites-full" >
@@ -305,7 +307,7 @@
 		<footer class="footer-wrap">
 			<div class="footer"> 
 				<div class="footer-elements">
-				<h3>A propos</h3>
+				<h4>A propos</h4>
 				<ul>
 					<li><a href="#">Fonctionnement du site</a></li>
 					<li><a href="#">Conditions générales de vente</a></li>
@@ -313,14 +315,14 @@
 				</ul>
 				</div>
 				<div class="footer-elements">
-				<h3>Nos hébergements</h3>
+				<h4>Nos hébergements</h4>
 				<ul>
 					<li><a href="#">Charte qualité</a></li>
 					<li><a href="#">Soumettre votre hôtel</a></li>
 				</ul>
 				</div>
 				<div class="footer-elements">
-				<h3>Assistance</h3>
+				<h4>Assistance</h4>
 				<ul>
 					<li><a href="#">Centre d'aide</a></li>
 					<li><a href="#">Nous contacter</a></li>
