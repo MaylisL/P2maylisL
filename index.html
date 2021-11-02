@@ -25,38 +25,40 @@
 			<section class="search">
 				<h1>Trouver votre hébergement pour  des vacances de rêve</h1>
 				<p>En plein centre ville ou en pleine nature</p>
-								<!-- SEARCH -- START  -->
+								<!-- SEARCH-START-->
 				<form class="search-container">
 					<label class="search-label-icon" for="search-input"><i class="fas fa-map-marker-alt" id="search-icon"></i>
 					</label>
 					<input type="search" value="Marseille, France" id="search-input">
-					<button id="search-button">Rechercher</button>
+					<button class="search-button-submission">
+						 <span class="search-button-text">Rechercher</span>
+						 <i class="fas fa-search search-button-icon"></i>
+					</button>
 				</form>
-								<!-- SEARCH -- END   -->
-								<!-- FILTERS -- START  -->
+								<!--SEARCH-END-->
+								<!--FILTERS-START-->
 				<div class="filters-container">
 					<p id="filtres">Filtres</p>
 					<div class="filter">
-						<label for="economique"><i class="fas fa-money-bill-wave circle-icon"></i><span class="filter-name">Économique</span></label>
-						<input type="checkbox" name="economique" id="economique">
+						<i class="fas fa-money-bill-wave circle-icon"></i><span class="filter-name">Économique</span>
 					</div>
 					<div class="filter">
-						<label for="familial"><i class="fas fa-child circle-icon"></i><span class="filter-name">Familial</span></label>
-						<input type="checkbox" name="familial" id="familial">
+						<i class="fas fa-child circle-icon"></i><span class="filter-name">Familial</span>
 					</div>
 					<div class="filter">
-						<label for="Romantique"><i class="fas fa-heart circle-icon"></i><span class="filter-name">Romantique</span></label>
-						<input type="checkbox" name="Romantique" id="Romantique">
+						<i class="fas fa-heart circle-icon"></i><span class="filter-name">Romantique</span>
 					</div>
 					<div class="filter">
-						<label for="animaux"><i class="fas fa-dog circle-icon"></i><span class="filter-name">Animaux Autorisés</span></label>
-						<input type="checkbox" name="animaux" id="animaux">
+						<i class="fas fa-dog circle-icon"></i><span class="filter-name">Animaux Autorisés</span>
 					</div>
 				</div>
-								<!-- FILTERS -- END  -->
-				<p><i class="fas fa-info" id="info-icon"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+								<!--FILTERS-END-->
+				<div class="info">
+					<i class="fas fa-info" id="info-icon"></i>
+					<p>Plus de 500 logements sont disponibles dans cette ville</p>
+				</div>		
 			</section>
-								<!-- HEBERGEMENTS -- CARDS -- START  -->
+								<!--HEBERGEMENT-CARDS-START-->
 			<div class="middle-container">
 				<section class="hebergements">
 						<h2>Hébergements à Marseille</h2>
@@ -74,7 +76,7 @@
 											<i class="fas fa-star"></i>
 											<i class="fas fa-star"></i>
 											<i class="fas fa-star"></i>
-											<i class="far fa-star"></i>
+											<i class="fas fa-star grey-star"></i>
 										</div>
 									</div>
 								</a>
@@ -110,7 +112,7 @@
 											<i class="fas fa-star"></i>
 											<i class="fas fa-star"></i>
 											<i class="fas fa-star"></i>
-											<i class="far fa-star"></i>
+											<i class="fas fa-star grey-star"></i>
 										</div>
 									</div>
 								</a>
@@ -127,8 +129,8 @@
 											<i class="fas fa-star"></i>
 											<i class="fas fa-star"></i>
 											<i class="fas fa-star"></i>
-											<i class="far fa-star"></i>
-											<i class="far fa-star"></i>
+											<i class="fas fa-star grey-star"></i>
+											<i class="fas fa-star grey-star"></i>
 										</div>
 									</div>
 								</a>
@@ -146,7 +148,7 @@
 											<i class="fas fa-star"></i>
 											<i class="fas fa-star"></i>
 											<i class="fas fa-star"></i>
-											<i class="far fa-star"></i>
+											<i class="fas fa-star grey-star"></i>
 										</div>
 									</div>
 								</a>
@@ -172,16 +174,16 @@
 						</div>
 						<p id="card-p">Afficher plus</p>
 				</section>
-									<!-- HEBERGEMENTS -- CARDS -- END  -->
-									<!-- LES PLUS POPULAIRES -- CARDS -- START  -->
+									<!--HEBERGEMENTS-CARDS-END-->
+									<!--LES PLUS POPULAIRES-CARDS-START-->
 				<aside class="populaires">
 					<div class="populaires-header">
 						<h2>Les plus populaires</h2>
-						<i class="fas fa-chart-line"></i>
+						<i class="fas fa-chart-line populaires-icon"></i>
 					</div>
 						<div class="cards-container-aside">
-							<a href="#">
-								<article class="card-aside">
+							<article class="card-aside">
+								<a href="#">
 									<div class="card-image-aside">
 										<img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"	alt="chambre double décoration moderne verte">
 									</div>
@@ -197,11 +199,11 @@
 											<i class="fas fa-star"></i>
 											<i class="fas fa-star"></i>
 										</div>
-									</div>		
-								</article>
-							</a>
-							<a href="#">
-								<article class="card-aside">
+									</div>	
+								</a>
+							</article>
+							<article class="card-aside">
+								<a href="#">
 									<div class="card-image-aside">
 										<img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre double spacieuse">
 									</div>
@@ -215,13 +217,13 @@
 											<i class="fas fa-star"></i>
 											<i class="fas fa-star"></i>
 											<i class="fas fa-star"></i>
-											<i class="far fa-star"></i>
+											<i class="fas fa-star grey-star"></i>
 										</div>
 									</div>
-								</article>
-							</a>
-							<a href="#">
-								<article class="card-aside">
+								</a>
+							</article>
+							<article class="card-aside">
+								<a href="#">
 									<div class="card-image-aside">
 										<img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre double décoration moderne">
 									</div>
@@ -235,93 +237,95 @@
 											<i class="fas fa-star"></i>
 											<i class="fas fa-star"></i>
 											<i class="fas fa-star"></i>
-											<i class="far fa-star"></i>
+											<i class="fas fa-star grey-star"></i>
 										</div>
 									</div>
-								</article>
-							</a>
+								</a>
+							</article>
 						</div>
 				</aside>
-									<!-- LES PLUS POPULAIRES -- CARDS -- END  -->
+									<!--LES PLUS POPULAIRES-CARDS-END -->
 			</div>
-									<!-- ACTIVITÉS A MARSEILLE -- CARDS -- START  -->
+									<!--ACTIVITÉS A MARSEILLE-CARDS-START-->
 			<section class="activites">
 				<h2>Activités à Marseille</h2>
-				<div class="card-simple-container">
-					<a href="#" class="card-simple card-simple-full" >
-						<div class="card-simple-image">
+				<div class="card-activites-container">
+					<a href="#" class="card-activites card-activites-full" >
+						<div class="card-activites-image">
 							<img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Des bâteaux sont amarés au vieux port de Marseille">
 						</div>
-						<div class="card-simple-title">
+						<div class="card-activites-title">
 							<h3>Vieux port</h3>
 						</div>
 					</a>
-					<a href="#" class="card-simple card-simple-two-third">
-							<div class="card-simple-image">
+					<a href="#" class="card-activites card-activites-two-third">
+							<div class="card-activites-image">
 								<img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Le Fort de Pomègues domine le nord de l'île">
 							</div>
-							<div class="card-simple-title">
+							<div class="card-activites-title">
 								<h3>Fort de Pomègues</h3>
 							</div>
 					</a>
-					<a href="#" class="card-simple card-simple-one-third">
-							<div class="card-simple-image">
+					<a href="#" class="card-activites card-activites-one-third">
+							<div class="card-activites-image">
 								<img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="l'île de frioul, petit paradis sauvage">
 							</div>
-							<div class="card-simple-title">
+							<div class="card-activites-title">
 								<h3>Îles du Frioul</h3>
 							</div>
 					</a>
-					<a href="#" class="card-simple card-simple-full">
-							<div class="card-simple-image">
+					<a href="#" class="card-activites card-activites-full">
+							<div class="card-activites-image">
 								<img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques de marseille, petit bijou de nature">
 							</div>
-							<div class="card-simple-title">
+							<div class="card-activites-title">
 								<h3>Parc National des Calanques</h3>
 							</div>
 					</a>
-					<a href="#" class="card-simple card-simple-half">
-							<div class="card-simple-image">
+					<a href="#" class="card-activites card-activites-half">
+							<div class="card-activites-image">
 								<img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Basilique notre dame, domine la ville de Marseille">
 							</div>
-							<div class="card-simple-title">
+							<div class="card-activites-title">
 								<h3>Notre-Dame-de-la-Garde</h3>
 							</div>
 					</a>
-					<a href="#" class="card-simple card-simple-half">
-							<div class="card-simple-image">
+					<a href="#" class="card-activites card-activites-half">
+							<div class="card-activites-image">
 								<img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Le parc longchamp est un palais-château d'eau de style néo-classique-Second Empire">
 							</div>
-							<div class="card-simple-title">
+							<div class="card-activites-title">
 								<h3>Parc Longchamp</h3>
 							</div>
 					</a>
 				</div>	
 			</section>
-									<!-- ACTIVITÉS A MARSEILLE -- CARDS -- END  -->
+									<!--ACTIVITÉS A MARSEILLE-CARDS-END-->
 		</main>
-		<footer class="footer">
-			<div class="footer-elements">
+		<footer class="footer-wrap">
+			<div class="footer"> 
+				<div class="footer-elements">
 				<h3>A propos</h3>
 				<ul>
 					<li><a href="#">Fonctionnement du site</a></li>
 					<li><a href="#">Conditions générales de vente</a></li>
 					<li><a href="#">Données et confidentialité</a></li>
 				</ul>
-			</div>
-			<div class="footer-elements">
+				</div>
+				<div class="footer-elements">
 				<h3>Nos hébergements</h3>
 				<ul>
 					<li><a href="#">Charte qualité</a></li>
 					<li><a href="#">Soumettre votre hôtel</a></li>
 				</ul>
-			</div>
-			<div class="footer-elements">
+				</div>
+				<div class="footer-elements">
 				<h3>Assistance</h3>
 				<ul>
 					<li><a href="#">Centre d'aide</a></li>
 					<li><a href="#">Nous contacter</a></li>
 				</ul>
+				</div>
 			</div>
 		</footer>
 	</body>
